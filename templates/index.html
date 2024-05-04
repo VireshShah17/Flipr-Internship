@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% load static %}
+{% block body %}
+<div
+      class="container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        gap: 10px;
+      "
+    >
+      <a type="button" class="btn btn-outline-info" href="{% url 'panel:add_a_cusotmer' %}">Add Customer</a>
+      <button type="button" class="btn btn-outline-info">
+        Purchase Orders
+      </button>
+      <button type="button" class="btn btn-outline-info">
+        Shipping Details
+      </button>
+</div>
+{% endblock %}
